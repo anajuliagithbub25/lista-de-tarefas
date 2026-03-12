@@ -94,6 +94,7 @@ li {
 .task-text {
   min-width: 0;
   display: -webkit-box;
+  line-clamp: 2;
   -webkit-line-clamp: 2;       /* mostra só 2 linhas */
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -104,6 +105,7 @@ li {
 
 .task-text.expanded {
   display: block;
+  line-clamp: unset;
   -webkit-line-clamp: unset;
   overflow: visible;
 }
